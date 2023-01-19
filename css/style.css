@@ -729,6 +729,13 @@ input[type=number] {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .08em;
+    transition: all .3s ease-in-out;
+}
+
+.solution-title .quote-btn:hover {
+    color: var(--bs-light-green-color);
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .sub-title p {
