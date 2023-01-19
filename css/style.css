@@ -588,8 +588,35 @@ input[type=number] {
 
 /* MODAL FORM CSS END */
 
-
 /* SERVICES CSS END */
+
+/* MEDICAL EQUIPMENT PARTS CSS START */
+
+.medic-equipment {
+    padding: 30px 0;
+}
+
+.medic-equipment .btn-cta {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 8px 15px;
+    background-color: var(--bs-light-green-color);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 13px;
+    transition: background-color .3s ease-in-out;
+}
+
+.medic-equipment .btn-cta:hover {
+    background-color: #839a1d;
+}
+/* MEDICAL EQUIPMENT PARTS CSS END */
 /*  ABOUT US CSS START */
 
 .about-us {
@@ -915,32 +942,22 @@ ul.footer-social-links li a:hover {
     text-decoration: underline;
 }
 
-.footer .terms {
+/* FOOTER CSS END */
+/* BOTTOM FOOTER CSS START */
+
+.bottom-footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+}
+
+
+.bottom-footer .terms {
     padding-left: 0;
     margin-bottom: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.footer .terms a {
-    color: #fff;
-    transition: color .3s ease-in-out;
-}
-
-.footer .terms a:hover {
-    color: #61696f;
-    text-decoration: underline;
-}
-
-.footer .terms span {
-    display: inline-block;
-    margin: 0 2px;
-}
-
-.footer .copyright {
-    padding: 9px 0;
-    display: inline-block;
 }
 
 .payment-method .payment-options {
@@ -952,15 +969,46 @@ ul.footer-social-links li a:hover {
     margin-bottom: 0;
 }
 
-.footer .address {
+
+.bottom-footer .copyright {
+    padding: 9px 0;
+    display: inline-block;
+}
+
+
+.bottom-footer .address {
     padding-top: 12px;
     display: inline-block;
     font-size: 17px;
 }
 
 
-/* FOOTER CSS END */
+.bottom-footer .terms a {
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
 
+.bottom-footer .terms a:hover {
+    color: #61696f;
+    text-decoration: underline;
+}
+
+.bottom-footer .terms span {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* BOTTOM FOOTER CSS END */
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+    nav ul li a,
+    nav ul li a:visited {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -1012,6 +1060,20 @@ ul.footer-social-links li a:hover {
 
     .mob-view ul {
         display: block !important;
+    }
+
+    .bottom-footer .terms {
+        justify-content: center;
+    }
+
+    .payment-method .payment-options {
+        justify-content: center;
+    }
+
+    .bottom-footer .address,
+    .bottom-footer .copyright {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -1195,6 +1257,17 @@ ul.footer-social-links li a:hover {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .footer .footer-links {
+        margin-bottom: 0;
+    }
+
+    .footer-links h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .img-content .img-wrap img {
         width: 60px;
@@ -1254,6 +1327,7 @@ ul.footer-social-links li a:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -1278,5 +1352,9 @@ ul.footer-social-links li a:hover {
 
     .search-area .btn-submit {
         border-radius: 5px;
+    }
+
+    .solution .img-content {
+        flex-wrap: wrap;
     }
 }
