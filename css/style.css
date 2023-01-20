@@ -113,6 +113,11 @@ a {
     width: 15px;
 }
 
+.cart-item img {
+    height: 22px;
+    width: auto;
+}
+
 /* TOP HEADER END */
 /* LOGO SECTION START */
 
@@ -343,44 +348,6 @@ nav ul li ul li a {
 .custom-carousel .carousel-item>img {
     display: none !important;
 }
-
-.custom-carousel .img-1 {
-    background-image: url(../images/slider-im-1.jpg);
-}
-
-.custom-carousel .img-2 {
-    background-image: url(../images/slider-im-2.jpg);
-}
-
-.custom-carousel .img-3 {
-    background-image: url(../images/slider-im-3.jpg);
-}
-
-.custom-carousel .img-4 {
-    background-image: url(../images/slider-im-4.webp);
-}
-
-.custom-carousel .img-5 {
-    background-image: url(../images/slider-im-5.webp);
-}
-
-.custom-carousel .img-6 {
-    background-image: url(../images/slider-im-6.webp);
-}
-
-.custom-carousel .img-7 {
-    background-image: url(../images/slider-im-7.webp);
-}
-
-.custom-carousel .img-8 {
-    background-image: url(../images/slider-im-8.webp);
-}
-
-.custom-carousel .img-9 {
-    background-image: url(../images/slider-im-9.webp);
-}
-
-
 
 /* CAROUSEL CSS END */
 /* SERVICES CSS START */
@@ -637,10 +604,8 @@ input[type=number] {
     font-size: 1.53846em !important;
     color: #333;
     line-height: 30px;
-    /* letter-spacing: 2px; */
     font-size: 23px;
     font-weight: 700;
-
 }
 
 .about-content {
@@ -649,6 +614,12 @@ input[type=number] {
     box-shadow: 2px 2px 10px 2px #dedede;
     background: #fff;
     margin: 35px auto;
+}
+
+.about-content .content-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .about-content .icon-wrap {
@@ -662,6 +633,12 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.about-content .icon-wrap:hover {
+    transform: translateY(-2px);
+    box-shadow: 0.1rem 1rem 1rem 0 #a7c52769;
 }
 
 .about-content .title p {
@@ -669,7 +646,6 @@ input[type=number] {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    height: 60px;
     text-transform: capitalize;
     color: #333;
 }
@@ -692,7 +668,6 @@ input[type=number] {
 .solution {
     background-color: var(--bs-blue-color);
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     padding: 35px 0 20px;
     position: relative;
@@ -723,7 +698,7 @@ input[type=number] {
 .solution-title .quote-btn {
     background: var(--bs-light-green-color);
     color: #fff;
-    font-size: 15px !important;
+    font-size: 15px;
     padding: 14px 20px;
     border-radius: 5px;
     font-weight: 700;
@@ -768,72 +743,41 @@ input[type=number] {
 }
 
 /* SOLUTION CSS END */
+/* LOGO SLIDER CSS START */
+
 .logo-slider {
-    padding-top: 30px;
-    margin-bottom: 5px;
+    overflow-x: hidden;
+    padding: 30px 0 5px 0;
 }
 
 .logo-slider h6 {
+    margin: 5px 0;
     font-size: 15px;
-    color: #333;
-    padding: 5px 0;
-}
-
-.slider {
-    /* height: 60px; */
-    position: relative;
-    width: 100%;
-
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-
-.slider::before,
-.slider::after {
-    position: absolute;
-    background-image: linear-gradient(to right, rgb(228 228 228) 0%, rgba(255, 255, 255, 0) 100%);
-    content: '';
-    height: 100%;
-    width: 10%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+    font-weight: 400;
 }
 
 
-.slide-track {
-    width: calc(300px * 14);
-    display: flex;
-    animation: scroll 40s linear 0s infinite normal none;
-    justify-content: space-around;
-    transition: animation 0.9s ease;
-    padding: 40px 0;
+.swiper-container {
     background-color: #e4e4e4;
 }
 
+  .logo-slider .swiper-slide {
+    padding: 40px 0;
+  }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0px);
-    }
+  .logo-slider .swiper-slide img {
+    width: 143px;
+    height: auto;
+  }
 
-    100% {
-        transform: translateX(calc(-300px * 7));
-    }
-}
+  .logo-slider .swiper-wrapper{
+    transition-timing-function: linear;
+     -webkit-transition-timing-function:linear !important;
+   -o-transition-timing-function:linear !important;
+   transition-timing-function:linear !important;
+  }
 
-
+/* LOGO SLIDER CSS END */
 /* FOOTER CSS START */
 
 .footer {
@@ -1143,10 +1087,6 @@ ul.footer-social-links li a:hover {
         opacity: 0;
     }
 
-    .solution-title {
-        flex-direction: column-reverse;
-    }
-
     .service-text .btn_group {
         flex-wrap: wrap;
     }
@@ -1250,9 +1190,6 @@ ul.footer-social-links li a:hover {
     }
 
     /* CAROUSEL CSS END */
-    .slide-track {
-        width: calc(250px * 14);
-    }
 
     .payment-method .payment-options {
         justify-content: center;
@@ -1308,11 +1245,6 @@ ul.footer-social-links li a:hover {
         padding: 3px 5px 3px 8px;
     }
 
-    .slide-track {
-        width: calc(230px * 14);
-        animation: scroll 14s linear 0s infinite normal none;
-    }
-
     .carousel-item .content {
         padding-top: 4rem;
     }
@@ -1326,9 +1258,6 @@ ul.footer-social-links li a:hover {
         margin-bottom: 0;
     }
 
-    /* .footer-links.pl-8 {
-        padding-left: 15px;
-    } */
 
     .payment-method .payment-options {
         flex-wrap: wrap;
