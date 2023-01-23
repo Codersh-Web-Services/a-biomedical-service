@@ -578,10 +578,62 @@ input[type=number] {
     letter-spacing: .08em;
     font-size: 13px;
     transition: background-color .3s ease-in-out;
+    margin: 0 0 40px;
 }
 
 .medic-equipment .btn-cta:hover {
     background-color: #839a1d;
+}
+
+.product-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.product-container .product-box {
+    flex-basis: 19%;
+    min-height: 403px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-box img {
+    max-width: 100%;
+}
+
+.product-container .product-box:hover img {
+    opacity: 0.85;
+}
+
+.product-box h4 {
+    font-size: 15px;
+    color: #595959;
+    margin: 10px 15px 0;
+    text-align: center;
+    line-height: 23px;
+    font-weight: 600;
+}
+
+.product-box .price {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.price .line-through {
+    text-decoration: line-through;
+    color: var(--bs-light-green-color);
+    font-weight: 700;
+}
+
+.price span {
+    color: #28bff6;
+    font-weight: 700;
+    font-size: 15px;
 }
 /* MEDICAL EQUIPMENT PARTS CSS END */
 /*  ABOUT US CSS START */
@@ -952,6 +1004,7 @@ ul.footer-social-links li a:hover {
 /* BOTTOM FOOTER CSS END */
 
 
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
 
     nav ul li a,
@@ -1090,6 +1143,10 @@ ul.footer-social-links li a:hover {
     .service-text .btn_group {
         flex-wrap: wrap;
     }
+
+    .product-container .product-box {
+        flex-basis: 30%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1199,6 +1256,20 @@ ul.footer-social-links li a:hover {
         padding-left: 15px;
     }
 
+    .product-container .product-box {
+        flex-basis: 45%;
+    }
+
+    .product-container .product-box {
+        min-height: auto;
+    }
+
+    .product-box h4 {
+        text-overflow: ellipsis; 
+overflow: hidden; 
+white-space: nowrap;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1292,5 +1363,15 @@ ul.footer-social-links li a:hover {
 
     .solution .img-content {
         flex-wrap: wrap;
+    }
+
+    .product-container .product-box {
+        flex-basis: 46%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .product-container .product-box {
+        flex-basis: 90%;
     }
 }
