@@ -587,15 +587,14 @@ input[type=number] {
 
 .product-container {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
 
 }
 
 .product-container .product-box {
-    flex-basis: 19%;
+    flex-basis: 18%;
     min-height: 403px;
     border: 1px solid #dbdbdb;
     border-radius: 10px;
@@ -1363,6 +1362,10 @@ white-space: nowrap;
 
     .solution .img-content {
         flex-wrap: wrap;
+    }
+
+    .product-container {
+        gap: 15px;
     }
 
     .product-container .product-box {
