@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.webp" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>A biomedical - Page </title>
+</head>
+
+<body>
+    <!-- TOP HEADER START -->
+    <section class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-xs-4 col-md-3 d-none d-md-block">
+                    <div class="header-social-links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="18px"
+                                        fill="currentColor" width="18px">
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="18px"
+                                        fill="currentColor" width="18px">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="18px"
+                                        fill="currentColor" width="18px">
+                                        <path
+                                            d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18px"
+                                        fill="currentColor" width="18px">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-5 hidden-md">
+                    <div class="certified-logos">
+                        <div class="certi-img">
+                            <img src="images/ISO-2015-W_130x.webp" alt="certificate-image">
+                        </div>
+                        <div class="certi-img">
+                            <img src="images/ISO-2015-W_130x.webp" alt="certificate-image">
+                        </div>
+                        <div class="certi-img">
+                            <img src="images/ISO-2015-W_130x.webp" alt="certificate-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-4">
+                    <div class="language-area">
+                        <select>
+                            <option value="">Select Language</option>
+                            <option value="en|bn">বাংলা</option>
+                            <option value="en|en">English</option>
+                            <option value="en|tl">Filipino</option>
+                            <option value="en|fr">Français</option>
+                            <option value="en|de">Deutsch</option>
+                            <option value="en|hi">हिन्दी</option>
+                            <option value="en|it">Italiano</option>
+                            <option value="en|la">Latin</option>
+                            <option value="en|ne">नेपाली</option>
+                            <option value="en|pt">Português</option>
+                            <option value="en|ru">Русский</option>
+                            <option value="en|es">Español</option>
+                            <option value="en|sv">Svenska</option>
+                            <option value="en|tr">Türkçe</option>
+                            <option value="en|vi">Tiếng Việt</option>
+                        </select>
+                        <div class="cart-item">
+                            <a href="#" class="d-flex align-items-center">
+                                <img src="images/cart-white.png" alt="Cart" height="22">
+                                <span class="ms-2 text-white text-nowrap">0 item(s)</span>
+                            </a>
+                        </div>
+                        <div class="user">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                    <path
+                                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TOP HEADER END -->
+    <!-- LOGO SECTION START -->
+    <section class="logo-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-12 d-block d-md-none text-center">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 d-none d-md-block">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 text-end sm-logo-section">
+                    <div class="contact">
+                        <div class="left">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="right">
+                            <span>Phone</span>
+                            <strong>+1-800-910-1422</strong>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="left">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="right">
+                            <span>Hours of Operation:</span>
+                            <strong>Mon. – Sat. 8:00 a.m. – 6:00 p.m. PDT</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOGO SECTION END -->
+    <!-- HEADER START -->
+    <header>
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav>
+                            <div class="nav-mobile">
+                                <a id="nav-toggle" href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a href="#">Medical Equipments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Flat Rate Repair</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Equipment Parts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Service</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a href="#">Service Contracts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Service And Repair Quote</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Depot Repair Quote</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Medical System We Service</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Biomedical Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Patient Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dental Repair Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Laboratory Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Medical Imaging Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Medical Networks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Medical Equipment For Home Care</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Medical Communication Systems</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Parts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Our Customers</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a href="#">Medical Centers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Clinics</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Government Customers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Original Equipment Manufacturers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">International Customers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Equipment Financing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a href="#">Contact Information</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customer Service</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Asset Disposition</a>
+                                </li>
+                                <li class="about-link ms-xl-5">
+                                    <a href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- CUSTOM-PAGE SECTION START -->
+    <section class="custom-page">
+        <div class="container custom">
+            <div class="row">
+                <div class="col-12">
+                    <div class="left-content">
+                        <h2>Service Contracts</h2>
+                        <div class="content-description">
+                            <p>
+                                A Biomedical Service is your complete solution for medical equipment service, repair,
+                                and
+                                maintenance plans. We offer innovative, reliable strategies to optimize and extend the
+                                life
+                                cycle of your medical equipment. Regardless of your equipment needs, we're experts at
+                                finding ways to make things work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <img src="images/page-img.webp" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CUSTOM-PAGE SECTION END -->
+    <!-- PAGE-CONTENT SECTION START -->
+    <section class="page-content">
+        <div class="container custom">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Take Advantage of A Biomedical Service Plans</h3>
+                    <div class="steps">
+                        <div class="content-box">
+                            <div class="row">
+                                <div class="col-12 col-md-2 col-xxl-1">
+                                    <div class="icon">
+                                        <img src="images/bio-icon.webp" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 col-xxl-11">
+                                    <div class="inner-info">
+                                        <h4> Medical Equipment</h4>
+                                        <p>
+                                            Downtime in medical equipment can be a matter of life and death. Our job is
+                                            to
+                                            keep
+                                            your
+                                            medical equipment running smoothly so you can provide the highest level of
+                                            patient
+                                            care
+                                            possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="row">
+                                <div class="col-12 col-md-2 col-xxl-1">
+                                    <div class="icon">
+                                        <img src="images/bio-icon.webp" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 col-xxl-11">
+                                    <div class="inner-info">
+                                        <h4> Service & Maintenance Contracts</h4>
+                                        <p>
+                                            Our yearly and monthly service contracts include regular maintenance for
+                                            your
+                                            medical equipment, plus most repair needs resulting from normal wear and
+                                            tear.
+                                            Preventative maintenance service contracts save you time and money by
+                                            keeping
+                                            small problems from developing into very expensive repair jobs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="row">
+                                <div class="col-12 col-md-2 col-xxl-1">
+                                    <div class="icon">
+                                        <img src="images/bio-icon.webp" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 col-xxl-11">
+                                    <div class="inner-info">
+                                        <h4> Remember</h4>
+                                        <p>
+                                            The quality of our services is solidly backed by highly skilled and
+                                            experienced
+                                            biomedical repair technicians. Our team has access to an extensive inventory
+                                            of
+                                            certified OEM, aftermarket and refurbished parts, plus a full-service repair
+                                            depot right here in Fresno, California when needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="row">
+                                <div class="col-12 col-md-2 col-xxl-1">
+                                    <div class="icon">
+                                        <img src="images/bio-icon.webp" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 col-xxl-11">
+                                    <div class="inner-info">
+                                        <h4> Repair</h4>
+                                        <p>
+                                            If your medical equipment needs repairing and you don't have a service
+                                            contract
+                                            in place, that's no problem. We're happy to repair your machines with a
+                                            minimum
+                                            of cost and hassle and get you up to speed as quickly as possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="row w-100 g-0">
+                                <div class="col-12 col-md-2 col-xxl-1">
+                                    <div class="icon">
+                                        <a href="tel: +1-800-910-1422 "> <img src="images/phone.png" alt="image"> </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 col-xxl-11 inner-info">
+                                    <h3 class="text-start"> Get in Touch</h3>
+                                    <p class="mb-20">
+                                        Want to know more about how our service contracts can benefit you? For more
+                                        information,feel free to contact us at:
+                                    </p>
+                                    <a class="d-block" href="tel: +1-800-910-1422"> +1-800-910-1422
+                                    </a>
+                                    <p class="mb-0">
+                                        Our customer representatives are friendly and will guide you through with a
+                                        smile!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PAGE-CONTENT SECTION END -->
+    <!-- FORM SECTION START -->
+    <section class="form">
+        <div class="container-fluid">
+            <div class="container bg-image"
+                style="background-image: url('images/banner__A_Bio_Medical_Services_5.webp');">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 ms-md-auto">
+                        <form action="#" class="row g-3 form-container">
+                            <div class="col-12">
+                                <h3 class="form-title">Service and repair<span> quote</span></h3>
+                                <p>
+                                    Lets fix your equipment or system parts, so you can focus on what matter most!
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your name*"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your E-mail*" id="inputEmail">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" placeholder="Phone Number*" id="Number">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="State" aria-label="State">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="City" aria-label="City">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Manufacturer"
+                                    aria-label="Manufacturer">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Model" aria-label="Model">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="inputAddress"
+                                    placeholder="Organaisation Name">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="Checkbox">
+                                        Equipment Repair
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="Checkbox">
+                                        Parts Repair
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control" id="form_input_8" style="height: 90px"
+                                    name="Any Additional information" data-max="250" data-limiting="false"
+                                    placeholder="Issues with equipment and additional information*"></textarea>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="file" name=" Attach Equipment Images" id="imageupload_8"
+                                    accept=".gif,.png,.jpg,.jpeg" class="inputfile " data-filetype="image"
+                                    data-alloudupload="10" data-multiple="true" style="display: none;"
+                                    multiple="multiple">
+                                <label for="imageupload_8" class="attach-img"> Attach Equipment
+                                    Images</label>
+
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <iframe title="reCAPTCHA"
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfsfFQUAAAAAHH7cZMWqPdqf2LizZ5-rq7zd8h5&amp;co=aHR0cHM6Ly9mb3JtYnVpbGRlci5odWxrYXBwcy5jb206NDQz&amp;hl=en&amp;v=u35fw2Dx4G0WsO6SztVYg4cV&amp;size=normal&amp;cb=ma5fod85qhnf"
+                                    width="304" height="78" role="presentation" name="a-skxk3scaqa16" frameborder="0"
+                                    scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-send">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FORM SECTION END -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
