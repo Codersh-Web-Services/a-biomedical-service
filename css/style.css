@@ -1310,6 +1310,11 @@ ul.footer-social-links li a:hover {
     height: 100%;
     object-fit: cover;
 }
+.custom-page .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
 
 /* CUSTOM-PAGE CSS END */
 /* PAGE-CONTENT CSS START */
