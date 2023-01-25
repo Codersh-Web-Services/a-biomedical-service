@@ -1469,9 +1469,20 @@ ul.footer-social-links li a:hover {
 }
 
 /* FORM SECTION CSS END */
-
-
 /* INNER PAGE CSS END */
+/* CONTACT-INFO PAGE CSS START */
+
+.contact-info {
+    padding-top: 110px;
+}
+
+.contact-info .bg-image {
+    padding: 42px 30px 70px;
+    background-position: 0 20%;
+}
+
+/* CONTACT-INFO PAGE CSS START */
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
 
