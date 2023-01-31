@@ -1,4 +1,9 @@
 (function ($) {
+
+  $('#menu-item-40253').parent().attr('id','subMenuLink');
+  $('#menu-item-40253 a').addClass('subDropdown');
+  $("#menu-item-40254 a").addClass('subDropdown');
+
   $(function () {
     $('nav ul li a:not(:only-child)').click(function (e) {
       $(this).siblings('.nav-dropdown').toggle();
@@ -14,6 +19,9 @@
     $('#nav-toggle').on('click', function () {
       this.classList.toggle('active');
     });
+    $('.subDropdown').on('click',function () {
+      $("#subMenuLink").css("display","block");
+    })
   });
 })(jQuery);
 
@@ -52,3 +60,9 @@ $(function () {
     },
   });
 });
+
+// $(document).ready(function(){
+//   $(".submenu").click(function(){
+//     $(".submenu ~ ul").toggleClass("sub");
+//   });
+//
